@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>5. Opérateurs de comparaison</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header"><h1>5. Opérateurs de comparaison</h1></header>
+      <hr />
+      <section>
+        <h2>Description & Syntaxe</h2>
+        <p>
+          Attention à la différence entre le double égal
+          <code>==</code> (laxiste) et le triple égal <code>===</code> (strict).
+          En JS, on préfère presque toujours le triple égal !
+        </p>
+
+        <h3>Exemple : Vérification code PIN</h3>
+        <pre><code>let codeSaisi = "1234"; // L'utilisateur tape souvent du texte
+let codeSecret = 1234;  // Le code enregistré est un nombre
+
+// Comparaison laxiste (==)
+if (codeSaisi == codeSecret) {
+   console.log("Ouverture autorisée (converti auto)"); 
+   // JS transforme le texte "1234" en nombre 1234
+}
+
+// Comparaison stricte (===) - RECOMMANDÉ
+if (codeSaisi === codeSecret) {
+   console.log("Ceci ne s'affichera pas car les types sont différents");
+}</code></pre>
+      </section>
+      <div class="menu-buttons">
+        <div class="back-to-menu"><a href="page_4.html">← Précédent</a></div>
+        <div class="back-to-menu"><a href="index.html">↑ Menu</a></div>
+        <div class="back-to-menu"><a href="page_6.html">Suivant →</a></div>
+      </div>
+      <footer>
+        <p style="text-align: center; font-size: 0.9em; color: #666">
+          © 2025 — BUT MMI Béziers - MAURIN N.<br />
+          R1.12 Développement Web
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

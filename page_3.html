@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>3. Les Calculs</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header"><h1>3. Les Calculs</h1></header>
+      <hr />
+      <section>
+        <h2>Description & Syntaxe</h2>
+        <p>
+          En programmation, et surtout dans le jeu vidéo, les maths sont
+          partout. On utilise les opérateurs arithmétiques pour faire évoluer
+          les données :
+        </p>
+        <ul>
+          <li>
+            <strong>+</strong> : Addition (Gagner des points, ajouter de la vie)
+          </li>
+          <li>
+            <strong>-</strong> : Soustraction (Perdre des points, subir des
+            dégâts)
+          </li>
+          <li>
+            <strong>*</strong> : Multiplication (Bonus combo, expérience
+            doublée)
+          </li>
+          <li>
+            <strong>/</strong> : Division (Partager un butin, calculer une
+            moyenne)
+          </li>
+        </ul>
+
+        <h3>Exemple : Gestion du Score d'un Joueur</h3>
+        <pre><code>let score = 0; // Le joueur commence à 0
+let pointsEnnemi = 50;
+let multiplicateurCombo = 2;
+
+// 1. Le joueur élimine un ennemi (+50 points)
+score = score + pointsEnnemi; 
+// Le score est maintenant de 50
+
+// 2. Le joueur active un bonus "Double Score" (*2)
+score = score * multiplicateurCombo; 
+// Le score passe à 100 (50 x 2)
+
+// 3. Le joueur tombe dans un piège et perd des points (-20)
+score = score - 20; 
+// Le score final est de 80
+
+console.log("Score final : " + score + " pts");</code></pre>
+      </section>
+      <div class="menu-buttons">
+        <div class="back-to-menu"><a href="page_2.html">← Précédent</a></div>
+        <div class="back-to-menu"><a href="index.html">↑ Menu</a></div>
+        <div class="back-to-menu"><a href="page_4.html">Suivant →</a></div>
+      </div>
+      <footer>
+        <p style="text-align: center; font-size: 0.9em; color: #666">
+          © 2025 — BUT MMI Béziers - MAURIN N.<br />
+          R1.12 Développement Web
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

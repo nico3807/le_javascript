@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>1. Les Variables</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header"><h1>1. Les Variables</h1></header>
+      <hr />
+      <section>
+        <h2>Description & Syntaxe</h2>
+        <p>
+          Imaginez un profil utilisateur. Certaines données ne changeront jamais
+          (date de naissance), d'autres changeront souvent (nombre de likes).
+        </p>
+        <ul>
+          <li>
+            <strong>const</strong> : Pour ce qui ne bouge pas (Date de
+            naissance, Nom de serveur).
+          </li>
+          <li>
+            <strong>let</strong> : Pour ce qui évolue (Compteur, Pseudo,
+            Panier).
+          </li>
+        </ul>
+
+        <h3>Exemple : Profil Utilisateur</h3>
+        <pre><code>// Je déclare le nom du site (ne changera pas)
+const nomSite = "MySocialNetwork";
+
+// Je déclare le pseudo de l'utilisateur (peut changer)
+let pseudo = "DarkSasuke99";
+
+// Je déclare son nombre d'amis (va changer)
+let nombreAmis = 150;
+
+// Plus tard, l'utilisateur change de pseudo et ajoute un ami :
+pseudo = "LightNaruto01"; 
+nombreAmis = 151;
+
+// nomSite = "AutreSite"; // ❌ Erreur ! Impossible de modifier une const</code></pre>
+      </section>
+      <div class="menu-buttons">
+        <div class="back-to-menu"><a href="index.html">↑ Menu</a></div>
+        <div class="back-to-menu"><a href="page_2.html">Suivant →</a></div>
+      </div>
+      <footer>
+        <p style="text-align: center; font-size: 0.9em; color: #666">
+          © 2025 — BUT MMI Béziers - MAURIN N.<br />
+          R1.12 Développement Web
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

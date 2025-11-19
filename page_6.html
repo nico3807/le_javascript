@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>6. Opérateurs logiques</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header"><h1>6. Opérateurs logiques</h1></header>
+      <hr />
+      <section>
+        <h2>Description & Syntaxe</h2>
+        <p>
+          Parfois, une seule condition ne suffit pas. On doit combiner plusieurs
+          critères.
+        </p>
+
+        <h3>Exemple : Ouvrir un coffre fort</h3>
+        <pre><code>let aLaCle = true;
+let estProcheDuCoffre = true;
+let estEnCombat = false;
+
+// && (ET) : Il faut avoir la clé ET être proche
+if (aLaCle && estProcheDuCoffre) {
+    console.log("Vous insérez la clé...");
+}
+
+// ! (NON) : Il ne faut PAS être en combat pour ouvrir le menu
+if (!estEnCombat) {
+    console.log("Ouverture de l'inventaire possible.");
+}
+
+// || (OU) : Si j'ai la clé OU si je suis un voleur (crochetage)
+let competenceVoleur = false;
+if (aLaCle || competenceVoleur) {
+    console.log("Le coffre s'ouvre !");
+}</code></pre>
+      </section>
+      <div class="menu-buttons">
+        <div class="back-to-menu"><a href="page_5.html">← Précédent</a></div>
+        <div class="back-to-menu"><a href="index.html">↑ Menu</a></div>
+        <div class="back-to-menu"><a href="page_7.html">Suivant →</a></div>
+      </div>
+      <footer>
+        <p style="text-align: center; font-size: 0.9em; color: #666">
+          © 2025 — BUT MMI Béziers - MAURIN N.<br />
+          R1.12 Développement Web
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

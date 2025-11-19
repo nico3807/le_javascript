@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>12. Fonctions avec Arguments</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header"><h1>12. Fonctions avec Arguments</h1></header>
+      <hr />
+      <section>
+        <h2>Description & Syntaxe</h2>
+        <p>
+          Une fonction est encore plus utile si on peut lui donner des
+          informations (arguments) pour qu'elle travaille dessus.
+        </p>
+
+        <h3>Exemple : Convertisseur Euros vers Dollars</h3>
+        <pre><code>// La fonction attend un montant en euros (variable 'euros')
+function convertirEnDollars(euros) {
+    let tauxChange = 1.1; // 1 euro = 1.1 dollar
+    let resultat = euros * tauxChange;
+    return resultat; // La fonction "renvoie" le calcul
+}
+
+// Utilisation :
+let prixEnDollars = convertirEnDollars(20); 
+console.log("20 euros valent environ " + prixEnDollars + " dollars.");
+
+console.log("50 euros valent " + convertirEnDollars(50) + " dollars.");</code></pre>
+      </section>
+      <div class="menu-buttons">
+        <div class="back-to-menu"><a href="page_11.html">← Précédent</a></div>
+        <div class="back-to-menu"><a href="index.html">↑ Menu</a></div>
+      </div>
+      <footer>
+        <p style="text-align: center; font-size: 0.9em; color: #666">
+          © 2025 — BUT MMI Béziers - MAURIN N.<br />
+          R1.12 Développement Web
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

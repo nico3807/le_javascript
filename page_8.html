@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>8. La Boucle while</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header"><h1>8. La Boucle while</h1></header>
+      <hr />
+      <section>
+        <h2>Description & Syntaxe</h2>
+        <p>
+          On utilise <code>while</code> quand on ne sait pas combien de temps ça
+          va durer, mais qu'on a une condition d'arrêt.
+        </p>
+
+        <h3>Exemple : Simulation de téléchargement</h3>
+        <pre><code>let pourcentage = 0;
+
+// Tant que le téléchargement n'est pas fini (moins de 100%)
+while (pourcentage < 100) {
+    console.log("Téléchargement : " + pourcentage + "%");
+    
+    // On augmente le pourcentage (simulé ici par +10)
+    pourcentage = pourcentage + 10;
+}
+
+console.log("Téléchargement terminé ✅");</code></pre>
+      </section>
+      <div class="menu-buttons">
+        <div class="back-to-menu"><a href="page_7.html">← Précédent</a></div>
+        <div class="back-to-menu"><a href="index.html">↑ Menu</a></div>
+        <div class="back-to-menu"><a href="page_9.html">Suivant →</a></div>
+      </div>
+      <footer>
+        <p style="text-align: center; font-size: 0.9em; color: #666">
+          © 2025 — BUT MMI Béziers - MAURIN N.<br />
+          R1.12 Développement Web
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

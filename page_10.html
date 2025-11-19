@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>10. La structure Switch</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header"><h1>10. La structure Switch</h1></header>
+      <hr />
+      <section>
+        <h2>Description & Syntaxe</h2>
+        <p>
+          Quand on a beaucoup de "Si... Sinon Si... Sinon Si" sur la
+          <strong>même variable</strong>, le Switch est plus propre et plus
+          lisible.
+        </p>
+
+        <h3>Exemple : Feu tricolore</h3>
+        <pre><code>let couleurFeu = "orange";
+
+switch (couleurFeu) {
+    case "vert":
+        console.log("✅ Vous pouvez passer.");
+        break; // Important pour arrêter ici !
+        
+    case "orange":
+        console.log("⚠️ Attention, préparez-vous à l'arrêt.");
+        break;
+        
+    case "rouge":
+        console.log("🛑 STOP ! Arrêt obligatoire.");
+        break;
+        
+    default:
+        console.log("Erreur : couleur inconnue (feu en panne ?)");
+}</code></pre>
+      </section>
+      <div class="menu-buttons">
+        <div class="back-to-menu"><a href="page_9.html">← Précédent</a></div>
+        <div class="back-to-menu"><a href="index.html">↑ Menu</a></div>
+        <div class="back-to-menu"><a href="page_11.html">Suivant →</a></div>
+      </div>
+      <footer>
+        <p style="text-align: center; font-size: 0.9em; color: #666">
+          © 2025 — BUT MMI Béziers - MAURIN N.<br />
+          R1.12 Développement Web
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
